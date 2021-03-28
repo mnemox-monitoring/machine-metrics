@@ -2,7 +2,7 @@
 
 namespace machine_metrics
 {
-    public class Class1
+    public class Metrics
     {
     }
 }
