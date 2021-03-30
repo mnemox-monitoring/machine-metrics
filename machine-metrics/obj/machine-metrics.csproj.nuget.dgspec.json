@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\mnemox-tools\\machine-metrics\\machine-metrics\\machine-metrics.csproj",
-        "projectName": "machine-metrics",
+        "projectName": "mnemox-machine-metrics",
         "projectPath": "C:\\mnemox-tools\\machine-metrics\\machine-metrics\\machine-metrics.csproj",
         "packagesPath": "C:\\Users\\genadym\\.nuget\\packages\\",
         "outputPath": "C:\\mnemox-tools\\machine-metrics\\machine-metrics\\obj\\",
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Diagnostics.PerformanceCounter": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
