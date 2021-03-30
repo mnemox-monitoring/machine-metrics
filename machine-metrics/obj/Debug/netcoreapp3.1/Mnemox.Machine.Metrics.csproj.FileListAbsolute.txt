@@ -1,9 +1,0 @@
-C:\mnemox-tools\machine-metrics\machine-metrics\bin\Debug\netcoreapp3.1\mnemox-machine-metrics.deps.json
-C:\mnemox-tools\machine-metrics\machine-metrics\bin\Debug\netcoreapp3.1\mnemox-machine-metrics.dll
-C:\mnemox-tools\machine-metrics\machine-metrics\bin\Debug\netcoreapp3.1\mnemox-machine-metrics.pdb
-C:\mnemox-tools\machine-metrics\machine-metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.csprojAssemblyReference.cache
-C:\mnemox-tools\machine-metrics\machine-metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.AssemblyInfoInputs.cache
-C:\mnemox-tools\machine-metrics\machine-metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.AssemblyInfo.cs
-C:\mnemox-tools\machine-metrics\machine-metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.csproj.CoreCompileInputs.cache
-C:\mnemox-tools\machine-metrics\machine-metrics\obj\Debug\netcoreapp3.1\mnemox-machine-metrics.dll
-C:\mnemox-tools\machine-metrics\machine-metrics\obj\Debug\netcoreapp3.1\mnemox-machine-metrics.pdb

@@ -1091,6 +1091,19 @@
         "runtime": {
           "bin/placeholder/mnemox-machine-metrics.dll": {}
         }
+      },
+      "Mnemox.Machine.Metrics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "System.Diagnostics.PerformanceCounter": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Mnemox.Machine.Metrics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mnemox.Machine.Metrics.dll": {}
+        }
       }
     }
   },
@@ -4035,11 +4048,17 @@
       "type": "project",
       "path": "../../machine-metrics/Mnemox.Machine.Metrics.csproj",
       "msbuildProject": "../../machine-metrics/Mnemox.Machine.Metrics.csproj"
+    },
+    "Mnemox.Machine.Metrics/1.0.0": {
+      "type": "project",
+      "path": "../../Machine.Metrics/Mnemox.Machine.Metrics.csproj",
+      "msbuildProject": "../../Machine.Metrics/Mnemox.Machine.Metrics.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "Mnemox.Machine.Metrics >= 1.0.0",
       "coverlet.collector >= 1.2.0",
       "mnemox-machine-metrics >= 1.0.0",
       "xunit >= 2.4.0",
@@ -4080,6 +4099,9 @@
           "projectReferences": {
             "C:\\mnemox-tools\\machine-metrics\\machine-metrics\\Mnemox.Machine.Metrics.csproj": {
               "projectPath": "C:\\mnemox-tools\\machine-metrics\\machine-metrics\\Mnemox.Machine.Metrics.csproj"
+            },
+            "C:\\mnemox-tools\\machine-metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj": {
+              "projectPath": "C:\\mnemox-tools\\machine-metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj"
             }
           }
         }

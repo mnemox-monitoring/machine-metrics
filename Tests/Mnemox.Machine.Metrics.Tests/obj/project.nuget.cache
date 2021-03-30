@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/RgtrzcSNVBeklZFew5qLYtAZbCb89MiiVIRC3AuNFybXg63pIbfs2INX1IUJ6nSF5MYD/OduY+qADLCfG258w==",
+  "dgSpecHash": "e+nu59WCacu527w6357ecmQi538HU19E8YeKkRBB50LM+9lmLilqU0IboJlHk+mp3DD7lOQYVkckTax44FS1bQ==",
   "success": true,
   "projectFilePath": "C:\\mnemox-tools\\machine-metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
   "expectedPackageFiles": [

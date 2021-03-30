@@ -106,8 +106,6 @@ C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\net
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\mnemox-machine-metrics.dll
-C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\mnemox-machine-metrics.pdb
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.csprojAssemblyReference.cache
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.AssemblyInfoInputs.cache
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.AssemblyInfo.cs
@@ -116,3 +114,5 @@ C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\net
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.dll
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.pdb
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.genruntimeconfig.cache
+C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.dll
+C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.pdb
