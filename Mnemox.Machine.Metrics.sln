@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mnemox.Machine.Metrics", "M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{40DA99E1-8B04-4E2B-AB77-1BD87EC29F84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnemox.Machine.Metrics.Tests", "Tests\Mnemox.Machine.Metrics.Tests\Mnemox.Machine.Metrics.Tests.csproj", "{58784EA6-15CF-4A53-8CDB-16C844540524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mnemox.Machine.Metrics.Tests", "Tests\Mnemox.Machine.Metrics.Tests\Mnemox.Machine.Metrics.Tests.csproj", "{58784EA6-15CF-4A53-8CDB-16C844540524}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF7FFDA3-373B-4C4C-B42A-9E3A8B86A8C0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
