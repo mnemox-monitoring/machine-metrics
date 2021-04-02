@@ -17,7 +17,7 @@ namespace Mnemox.Machine.Metrics
 
             var metricsCollector = _metricsManagerHelpers.GetMetricsCollector(osPaltform);
 
-            var cpuUsage = metricsCollector.GetCpuUsage();
+            var cpuUsage = metricsCollector.GetCpuUsagePercentage();
 
             return new OsMetrics
             {

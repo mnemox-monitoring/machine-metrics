@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mnemox.Machine.Metrics.Windows;
+using System;
 using System.Runtime.InteropServices;
 
 namespace Mnemox.Machine.Metrics
@@ -15,21 +16,22 @@ namespace Mnemox.Machine.Metrics
             {
                 return OSPlatform.Linux;
             }
-            throw new NotImplementedException("Unsupported OS type");
+
+            throw new NotImplementedException("Not supported platform");
         }
 
-        public IMetrics GetMetricsCollector(OSPlatform osPlatform)
+        public IMemoryMetrics GetMetricsCollector(OSPlatform osPlatform)
         {
             if (osPlatform == OSPlatform.Windows)
             {
-                return new WindowsMetricsCollector();
+                return new WindowsMemoryMetrics();
             }
             else if (osPlatform == OSPlatform.Linux)
             {
                 return new LinuxMetricsCollector();
             }
 
-            throw new NotImplementedException("Unsupported OS type");
+            throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
         }
     }
 }

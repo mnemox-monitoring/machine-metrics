@@ -1,3 +1,4 @@
+using Mnemox.Machine.Metrics.Windows;
 using System;
 using System.Runtime.InteropServices;
 using Xunit;
@@ -13,7 +14,7 @@ namespace Mnemox.Machine.Metrics.Tests
 
             var metricsCollector = target.GetMetricsCollector(OSPlatform.Windows);
 
-            Assert.IsType<WindowsMetricsCollector>(metricsCollector);
+            Assert.IsType<WindowsMemoryMetrics>(metricsCollector);
         }
 
         [Fact]
@@ -34,6 +35,16 @@ namespace Mnemox.Machine.Metrics.Tests
             Assert.Throws<NotImplementedException>(() => target.GetMetricsCollector(OSPlatform.OSX));
 
             Assert.Throws<NotImplementedException>(() => target.GetMetricsCollector(OSPlatform.FreeBSD));
+        }
+
+        [Fact]
+        public void A()
+        {
+            var a = new WindowsMemoryMetrics().GetPhysicalMemory();
+
+            var b = new WindowsMemoryMetrics().GetMemoryAvailableBytes();
+
+            var c = new WindowsMemoryMetrics().GetCurrentProcessCpuUsagePercentage();
         }
     }
 }

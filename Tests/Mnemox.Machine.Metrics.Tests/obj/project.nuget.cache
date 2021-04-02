@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e+nu59WCacu527w6357ecmQi538HU19E8YeKkRBB50LM+9lmLilqU0IboJlHk+mp3DD7lOQYVkckTax44FS1bQ==",
+  "dgSpecHash": "At4vQPKKM9hDPHmxaFgzUHvQ2UyAd19RZiK38gGl/svi5OOiNAoeN1UEu9kwX+ethWLXVZh5EkYN2BA2yjQTfQ==",
   "success": true,
   "projectFilePath": "C:\\mnemox-tools\\machine-metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\genadym\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
+    "C:\\Users\\genadym\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
@@ -29,6 +30,7 @@
     "C:\\Users\\genadym\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
+    "C:\\Users\\genadym\\.nuget\\packages\\system.management\\4.7.0\\system.management.4.7.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\system.reflection.emit\\4.0.1\\system.reflection.emit.4.0.1.nupkg.sha512",

@@ -116,3 +116,6 @@ C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\net
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.Tests.genruntimeconfig.cache
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.dll
 C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.pdb
+C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\System.Management.dll
+C:\mnemox-tools\machine-metrics\Tests\Mnemox.Machine.Metrics.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Management.dll
