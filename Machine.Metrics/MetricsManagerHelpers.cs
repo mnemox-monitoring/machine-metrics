@@ -1,4 +1,5 @@
-﻿using Mnemox.Machine.Metrics.Windows;
+﻿using Mnemox.Machine.Metrics.Linux;
+using Mnemox.Machine.Metrics.Windows;
 using System;
 using System.Runtime.InteropServices;
 
@@ -14,7 +15,7 @@ namespace Mnemox.Machine.Metrics
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
-                throw new NotImplementedException();
+                return OSPlatform.Linux;
             }
 
             throw new NotImplementedException("Not supported platform");
@@ -28,7 +29,7 @@ namespace Mnemox.Machine.Metrics
             }
             else if (osPlatform == OSPlatform.Linux)
             {
-                throw new NotImplementedException();
+                return new LinuxMemoryMetrics();
             }
 
             throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
@@ -42,7 +43,7 @@ namespace Mnemox.Machine.Metrics
             }
             else if (osPlatform == OSPlatform.Linux)
             {
-                throw new NotImplementedException();
+                return new LinuxCpuMetrics();
             }
 
             throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
