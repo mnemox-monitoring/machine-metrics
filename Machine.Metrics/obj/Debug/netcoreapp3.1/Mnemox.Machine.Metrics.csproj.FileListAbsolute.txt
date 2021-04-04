@@ -16,3 +16,11 @@ C:\mnemox-tools\machine-metrics\Machine.Metrics\bin\Debug\netcoreapp3.1\Mnemox.M
 C:\mnemox-tools\machine-metrics\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.dll
 C:\mnemox-tools\machine-metrics\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.pdb
 C:\mnemox-tools\machine-metrics\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.csproj.CoreCompileInputs.cache
+C:\GIT\mnemox-tools\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.csprojAssemblyReference.cache
+C:\GIT\mnemox-tools\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.AssemblyInfoInputs.cache
+C:\GIT\mnemox-tools\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.AssemblyInfo.cs
+C:\GIT\mnemox-tools\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.dll
+C:\GIT\mnemox-tools\Machine.Metrics\obj\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.pdb
+C:\GIT\mnemox-tools\Machine.Metrics\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.deps.json
+C:\GIT\mnemox-tools\Machine.Metrics\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.dll
+C:\GIT\mnemox-tools\Machine.Metrics\bin\Debug\netcoreapp3.1\Mnemox.Machine.Metrics.pdb

@@ -12,7 +12,7 @@ namespace Mnemox.Machine.Metrics.Tests
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            var metricsCollector = target.GetMetricsCollector(OSPlatform.Windows);
+            var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Windows);
 
             Assert.IsType<WindowsMemoryMetrics>(metricsCollector);
         }
@@ -22,7 +22,7 @@ namespace Mnemox.Machine.Metrics.Tests
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            var metricsCollector = target.GetMetricsCollector(OSPlatform.Linux);
+            var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Linux);
 
             Assert.IsType<LinuxMetricsCollector>(metricsCollector);
         }
@@ -32,19 +32,19 @@ namespace Mnemox.Machine.Metrics.Tests
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            Assert.Throws<NotImplementedException>(() => target.GetMetricsCollector(OSPlatform.OSX));
+            Assert.Throws<NotImplementedException>(() => target.GetMemoryMetricsCollector(OSPlatform.OSX));
 
-            Assert.Throws<NotImplementedException>(() => target.GetMetricsCollector(OSPlatform.FreeBSD));
+            Assert.Throws<NotImplementedException>(() => target.GetMemoryMetricsCollector(OSPlatform.FreeBSD));
         }
 
-        [Fact]
-        public void A()
-        {
-            var a = new WindowsMemoryMetrics().GetPhysicalMemory();
+        //[Fact]
+        //public void A()
+        //{
+        //    var a = new WindowsMemoryMetrics().GetPhysicalMemory();
 
-            var b = new WindowsMemoryMetrics().GetMemoryAvailableBytes();
+        //    var b = new WindowsMemoryMetrics().GetMemoryAvailableBytes();
 
-            var c = new WindowsMemoryMetrics().GetCurrentProcessCpuUsagePercentage();
-        }
+        //    var c = new WindowsMemoryMetrics().GetCurrentProcessCpuUsagePercentage();
+        //}
     }
 }
