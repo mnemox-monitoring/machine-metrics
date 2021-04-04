@@ -17,24 +17,24 @@ namespace Mnemox.Machine.Metrics.Tests
             Assert.IsType<WindowsMemoryMetrics>(metricsCollector);
         }
 
-        [Fact]
-        public void Returns_LinuxMetricsCollector_If_OS_Is_Linux()
-        {
-            var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
+        //[Fact]
+        //public void Returns_LinuxMetricsCollector_If_OS_Is_Linux()
+        //{
+        //    var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Linux);
+        //    var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Linux);
 
-            Assert.IsType<LinuxMetricsCollector>(metricsCollector);
-        }
+        //    Assert.IsType<LinuxMetricsCollector>(metricsCollector);
+        //}
 
         [Fact]
         public void GetMetricsCollector_ThrowsError_If_OS_unsupported()
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            Assert.Throws<NotImplementedException>(() => target.GetMemoryMetricsCollector(OSPlatform.OSX));
+            Assert.Throws<PlatformNotSupportedException>(() => target.GetMemoryMetricsCollector(OSPlatform.OSX));
 
-            Assert.Throws<NotImplementedException>(() => target.GetMemoryMetricsCollector(OSPlatform.FreeBSD));
+            Assert.Throws<PlatformNotSupportedException>(() => target.GetMemoryMetricsCollector(OSPlatform.FreeBSD));
         }
 
         //[Fact]
