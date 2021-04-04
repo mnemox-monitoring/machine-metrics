@@ -1,3 +1,4 @@
+using Mnemox.Machine.Metrics.Linux;
 using Mnemox.Machine.Metrics.Windows;
 using System;
 using System.Runtime.InteropServices;
@@ -8,7 +9,7 @@ namespace Mnemox.Machine.Metrics.Tests
     public class MetricsManagerHelpersTests
     {
         [Fact]
-        public void Returns_WindowsMetricsCollector_If_OS_Is_Windows()
+        public void GetMemoryMetricsCollector_Returns_WindowsMemoryMetrics_If_OS_Is_Windows()
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
@@ -17,15 +18,35 @@ namespace Mnemox.Machine.Metrics.Tests
             Assert.IsType<WindowsMemoryMetrics>(metricsCollector);
         }
 
-        //[Fact]
-        //public void Returns_LinuxMetricsCollector_If_OS_Is_Linux()
-        //{
-        //    var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
+        [Fact]
+        public void GetCpuMetricsCollector_Returns_WindowsCpuMetrics_If_OS_Is_Windows()
+        {
+            var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-        //    var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Linux);
+            var metricsCollector = target.GetCpuMetricsCollector(OSPlatform.Windows);
 
-        //    Assert.IsType<LinuxMetricsCollector>(metricsCollector);
-        //}
+            Assert.IsType<WindowsCpuMetrics>(metricsCollector);
+        }
+
+        [Fact]
+        public void GetMemoryMetricsCollector_Returns_LinuxMemoryMetrics_If_OS_Is_Linux()
+        {
+            var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
+
+            var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Linux);
+
+            Assert.IsType<LinuxMemoryMetrics>(metricsCollector);
+        }
+
+        [Fact]
+        public void GetCpuMetricsCollector_Returns_LinuxCpuMetrics_If_OS_Is_Linux()
+        {
+            var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
+
+            var metricsCollector = target.GetCpuMetricsCollector(OSPlatform.Linux);
+
+            Assert.IsType<LinuxCpuMetrics>(metricsCollector);
+        }
 
         [Fact]
         public void GetMetricsCollector_ThrowsError_If_OS_unsupported()
