@@ -1,10 +1,12 @@
-﻿using System.Runtime.InteropServices;
+﻿using Mnemox.Machine.Metrics.Windows;
+using System.Runtime.InteropServices;
 
 namespace Mnemox.Machine.Metrics
 {
     public interface IMetricsManagerHelpers
     {
         OSPlatform DetectOsPlatform();
-        IMemoryMetrics GetMetricsCollector(OSPlatform osPlatform);
+        ICpuMetrics GetCpuMetricsCollector(OSPlatform osPlatform);
+        IMemoryMetrics GetMemoryMetricsCollector(OSPlatform osPlatform);
     }
 }

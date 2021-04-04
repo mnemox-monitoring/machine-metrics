@@ -14,13 +14,13 @@ namespace Mnemox.Machine.Metrics
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
-                return OSPlatform.Linux;
+                throw new NotImplementedException();
             }
 
             throw new NotImplementedException("Not supported platform");
         }
 
-        public IMemoryMetrics GetMetricsCollector(OSPlatform osPlatform)
+        public IMemoryMetrics GetMemoryMetricsCollector(OSPlatform osPlatform)
         {
             if (osPlatform == OSPlatform.Windows)
             {
@@ -28,7 +28,21 @@ namespace Mnemox.Machine.Metrics
             }
             else if (osPlatform == OSPlatform.Linux)
             {
-                return new LinuxMetricsCollector();
+                throw new NotImplementedException();
+            }
+
+            throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
+        }
+
+        public ICpuMetrics GetCpuMetricsCollector(OSPlatform osPlatform)
+        {
+            if (osPlatform == OSPlatform.Windows)
+            {
+                return new WindowsCpuMetrics();
+            }
+            else if (osPlatform == OSPlatform.Linux)
+            {
+                throw new NotImplementedException();
             }
 
             throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");

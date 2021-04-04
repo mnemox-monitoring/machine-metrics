@@ -2,6 +2,6 @@
 {
     public class OsMetrics
     {
-        public float CpuUsage { get; set; }
+        public float TotalCpuUsagePercentage { get; set; }
     }
 }

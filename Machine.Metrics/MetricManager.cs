@@ -15,13 +15,13 @@ namespace Mnemox.Machine.Metrics
         {
             var osPaltform = _metricsManagerHelpers.DetectOsPlatform();
 
-            var metricsCollector = _metricsManagerHelpers.GetMetricsCollector(osPaltform);
+            var memoryMetricsCollector = _metricsManagerHelpers.GetCpuMetricsCollector(osPaltform);
 
-            var cpuUsage = metricsCollector.GetCpuUsagePercentage();
+            var totalCpuUsagePercentage = memoryMetricsCollector.GetCpuUsagePercentage();
 
             return new OsMetrics
             {
-                CpuUsage = cpuUsage
+                TotalCpuUsagePercentage = totalCpuUsagePercentage
             };
         }
     }

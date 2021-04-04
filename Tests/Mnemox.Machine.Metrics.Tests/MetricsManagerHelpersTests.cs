@@ -12,39 +12,39 @@ namespace Mnemox.Machine.Metrics.Tests
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            var metricsCollector = target.GetMetricsCollector(OSPlatform.Windows);
+            var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Windows);
 
             Assert.IsType<WindowsMemoryMetrics>(metricsCollector);
         }
 
-        [Fact]
-        public void Returns_LinuxMetricsCollector_If_OS_Is_Linux()
-        {
-            var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
+        //[Fact]
+        //public void Returns_LinuxMetricsCollector_If_OS_Is_Linux()
+        //{
+        //    var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            var metricsCollector = target.GetMetricsCollector(OSPlatform.Linux);
+        //    var metricsCollector = target.GetMemoryMetricsCollector(OSPlatform.Linux);
 
-            Assert.IsType<LinuxMetricsCollector>(metricsCollector);
-        }
+        //    Assert.IsType<LinuxMetricsCollector>(metricsCollector);
+        //}
 
         [Fact]
         public void GetMetricsCollector_ThrowsError_If_OS_unsupported()
         {
             var target = MnemoxMachineMetricsTestsHelpers.CreateMetricsManagerHelpersTarget();
 
-            Assert.Throws<NotImplementedException>(() => target.GetMetricsCollector(OSPlatform.OSX));
+            Assert.Throws<PlatformNotSupportedException>(() => target.GetMemoryMetricsCollector(OSPlatform.OSX));
 
-            Assert.Throws<NotImplementedException>(() => target.GetMetricsCollector(OSPlatform.FreeBSD));
+            Assert.Throws<PlatformNotSupportedException>(() => target.GetMemoryMetricsCollector(OSPlatform.FreeBSD));
         }
 
-        [Fact]
-        public void A()
-        {
-            var a = new WindowsMemoryMetrics().GetPhysicalMemory();
+        //[Fact]
+        //public void A()
+        //{
+        //    var a = new WindowsMemoryMetrics().GetPhysicalMemory();
 
-            var b = new WindowsMemoryMetrics().GetMemoryAvailableBytes();
+        //    var b = new WindowsMemoryMetrics().GetMemoryAvailableBytes();
 
-            var c = new WindowsMemoryMetrics().GetCurrentProcessCpuUsagePercentage();
-        }
+        //    var c = new WindowsMemoryMetrics().GetCurrentProcessCpuUsagePercentage();
+        //}
     }
 }
