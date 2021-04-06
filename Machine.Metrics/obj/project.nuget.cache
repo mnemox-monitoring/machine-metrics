@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X8HfTw12Sn0L0PRSyD8dhmS5GDQ1R5ZmC7mWnbBSnIHyD4leOuFyy8ZbSxfeylI8Bf1s68IXOyOdk93un1LhmA==",
+  "dgSpecHash": "gPkE/vrELM0cq6Ni8jaeDb6OyJpKZgVlxW7/i3kdKbBct0nHJwHRweabHAQfpdABuA4q9ZTU/IOflsTl22yL8w==",
   "success": true,
-  "projectFilePath": "C:\\mnemox-tools\\machine-metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj",
+  "projectFilePath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\genadym\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\genadym\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

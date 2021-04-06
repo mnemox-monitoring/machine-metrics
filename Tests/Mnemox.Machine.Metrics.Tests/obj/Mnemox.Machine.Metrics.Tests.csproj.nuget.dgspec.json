@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\mnemox-tools\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj": {}
+    "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\mnemox-tools\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj": {
+    "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\mnemox-tools\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj",
+        "projectUniqueName": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj",
         "projectName": "Mnemox.Machine.Metrics",
-        "projectPath": "C:\\GIT\\mnemox-tools\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj",
+        "projectPath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj",
         "packagesPath": "C:\\Users\\genadym\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\mnemox-tools\\Machine.Metrics\\obj\\",
+        "outputPath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,7 +25,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/": {},
+          "https://www.myget.org/F/imagesharp": {},
+          "https://www.myget.org/F/sixlabors/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -65,18 +67,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GIT\\mnemox-tools\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj": {
+    "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\mnemox-tools\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
+        "projectUniqueName": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
         "projectName": "Mnemox.Machine.Metrics.Tests",
-        "projectPath": "C:\\GIT\\mnemox-tools\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
+        "projectPath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
         "packagesPath": "C:\\Users\\genadym\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\mnemox-tools\\Tests\\Mnemox.Machine.Metrics.Tests\\obj\\",
+        "outputPath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -90,13 +92,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/": {},
+          "https://www.myget.org/F/imagesharp": {},
+          "https://www.myget.org/F/sixlabors/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\GIT\\mnemox-tools\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj": {
-                "projectPath": "C:\\GIT\\mnemox-tools\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj"
+              "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj": {
+                "projectPath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Machine.Metrics\\Mnemox.Machine.Metrics.csproj"
               }
             }
           }
@@ -142,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
         }
       }
     }
