@@ -6,4 +6,8 @@
     <AssemblyName>mnemox-mm-cli</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mnemox.Machine.Metrics\Mnemox.Machine.Metrics.csproj" />
+  </ItemGroup>
+
 </Project>

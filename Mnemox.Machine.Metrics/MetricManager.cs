@@ -15,13 +15,19 @@ namespace Mnemox.Machine.Metrics
         {
             var osPaltform = _metricsManagerHelpers.DetectOsPlatform();
 
-            var memoryMetricsCollector = _metricsManagerHelpers.GetCpuMetricsCollector(osPaltform);
+            var memoryMetricsCollector = _metricsManagerHelpers.GetMemoryMetricsCollector(osPaltform);
 
-            var totalCpuUsagePercentage = memoryMetricsCollector.GetCpuUsagePercentage();
+            var memoryMestrics = memoryMetricsCollector.GetTotalPhysicalMemory();
+
+            //var cpuMetricsCollector = _metricsManagerHelpers.GetCpuMetricsCollector(osPaltform);
+
+            //var totalCpuUsagePercentage = cpuMetricsCollector.GetCpuUsagePercentage();
 
             return new OsMetrics
             {
-                TotalCpuUsagePercentage = totalCpuUsagePercentage
+                //TotalCpuUsagePercentage = totalCpuUsagePercentage,
+
+                CapacityBytes = memoryMestrics.CapaciyBytes
             };
         }
     }

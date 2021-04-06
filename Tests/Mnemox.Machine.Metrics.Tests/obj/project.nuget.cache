@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ms9yuwAvBZPpLxylifY8gUNrueso7aUXi3ZpObiHTA5PN7JogpdxQSg3zBZd9ZBzlsSJn4SuSTWYh2nVYYpvsQ==",
+  "dgSpecHash": "gvscPmuA2jb4nROfi8jRo+l8Iy5OJCtCzKvADeV8H/P9mQyNAD2tNCSppEXCAGzL5zqEkqZHp/F0LktlwmmCTA==",
   "success": true,
   "projectFilePath": "C:\\mnemox-tools\\Mnemox.Machine.Metrics\\Tests\\Mnemox.Machine.Metrics.Tests\\Mnemox.Machine.Metrics.Tests.csproj",
   "expectedPackageFiles": [
