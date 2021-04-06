@@ -1,7 +1,6 @@
 ﻿using Mnemox.Machine.Metrics.Structures;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace Mnemox.Machine.Metrics.Linux
 {

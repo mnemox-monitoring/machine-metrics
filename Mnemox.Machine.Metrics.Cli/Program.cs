@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Mnemox.Machine.Metrics.Cli
 {
@@ -17,6 +18,37 @@ namespace Mnemox.Machine.Metrics.Cli
             Console.WriteLine();
             Console.WriteLine("******************************************");
             Console.WriteLine();
+
+            try
+            {
+                GetCpuUsage();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private static void GetCpuUsage()
+        {
+
+                var output = "";
+
+                var info = new ProcessStartInfo("top")
+                {
+                    FileName = "/bin/bash",
+
+                    Arguments = "top -b -n2 -p 1 | fgrep \"Cpu(s)\" | tail -1 | awk -F'id,' -v prefix=\"$prefix\" '{ split($1, vs, \",\"); v=vs[length(vs)]; sub(\"%\", \"\", v); printf \"%s%.1f%%\n\", prefix, 100 - v }'",
+
+                    RedirectStandardOutput = true
+                };
+
+                using (var process = Process.Start(info))
+                {
+                    output = process.StandardOutput.ReadToEnd();
+                }
+
+               
         }
     }
 }
