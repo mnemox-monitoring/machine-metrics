@@ -29,7 +29,7 @@ namespace Mnemox.Machine.Metrics
             }
             else if (osPlatform == OSPlatform.Linux)
             {
-                return new LinuxMemoryMetrics();
+                return new LinuxMemoryMetrics(new LinuxMemoryMetricsHelpers());
             }
 
             throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
@@ -43,7 +43,7 @@ namespace Mnemox.Machine.Metrics
             }
             else if (osPlatform == OSPlatform.Linux)
             {
-                return new LinuxCpuMetrics();
+                return new LinuxCpuMetrics(new LinuxCpuMetricsHelpers());
             }
 
             throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
