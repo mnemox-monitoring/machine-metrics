@@ -23,6 +23,6 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Publish
-      run: dotnet publish Machine.Metrics/Mnemox.Machine.Metrics.csproj -c Release --output ./Machine.Metrics/bin/publish
+   # - name: Publish
+   #   run: dotnet publish Machine.Metrics/Mnemox.Machine.Metrics.csproj -c Release --output ./Machine.Metrics/bin/publish
       
