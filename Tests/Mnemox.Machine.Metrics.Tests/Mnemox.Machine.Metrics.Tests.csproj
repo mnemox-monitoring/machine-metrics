@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Machine.Metrics\Mnemox.Machine.Metrics.csproj" />
+    <ProjectReference Include="..\..\Mnemox.Machine.Metrics\Mnemox.Machine.Metrics.csproj" />
   </ItemGroup>
 
 </Project>
