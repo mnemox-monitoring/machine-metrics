@@ -16,7 +16,7 @@ namespace Mnemox.Machine.Metrics.Windows
 
         private const string PERFORMANCE_COUNTER_PROCESS = "Process";
 
-        public float GetCpuUsagePercentage()
+        public double GetCpuUsagePercentage()
         {
             var performanceCounter = new PerformanceCounter(
                     PERFORMANCE_COUNTER_PROCESSOR,
@@ -37,7 +37,7 @@ namespace Mnemox.Machine.Metrics.Windows
             return value;
         }
 
-        public float GetCurrentProcessCpuUsagePercentage()
+        public double GetCurrentProcessCpuUsagePercentage()
         {
             var currentProcessName = Process.GetCurrentProcess().ProcessName;
 

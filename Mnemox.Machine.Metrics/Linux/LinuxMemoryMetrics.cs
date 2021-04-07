@@ -8,9 +8,15 @@ namespace Mnemox.Machine.Metrics.Linux
     {
         private readonly ILinuxMemoryMetricsHelpers _linuxMemoryMetricsHelpers;
 
-        public LinuxMemoryMetrics(ILinuxMemoryMetricsHelpers linuxMemoryMetricsHelpers)
+        private readonly ILinuxCommandsHelper _linuxCommandsHelper;
+
+        public LinuxMemoryMetrics(
+            ILinuxMemoryMetricsHelpers linuxMemoryMetricsHelpers, 
+            ILinuxCommandsHelper linuxCommandsHelper)
         {
             _linuxMemoryMetricsHelpers = linuxMemoryMetricsHelpers;
+
+            _linuxCommandsHelper = linuxCommandsHelper;
         }
 
         public ulong GetMemoryAvailableBytes()
@@ -25,7 +31,7 @@ namespace Mnemox.Machine.Metrics.Linux
 
         public PhysicalMemory GetTotalPhysicalMemory()
         {
-            var freeCommandOutput = _linuxMemoryMetricsHelpers.GetFreeCommandOutput();
+            var freeCommandOutput = _linuxCommandsHelper.ExecuteBashCommand(LinuxCommands.GET_MEMORY_METRICS);
 
             var metrics = _linuxMemoryMetricsHelpers.GetParsedMetrics(freeCommandOutput);
 

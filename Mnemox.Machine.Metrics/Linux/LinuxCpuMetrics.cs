@@ -1,26 +1,32 @@
-﻿using Mnemox.Machine.Metrics.Windows;
+﻿using Mnemox.Machine.Metrics.Structures;
+using Mnemox.Machine.Metrics.Windows;
 using System;
-using System.Diagnostics;
 
 namespace Mnemox.Machine.Metrics.Linux
 {
     public class LinuxCpuMetrics : ICpuMetrics
     {
-        private const string COMMAND_TO_GET_CPU_USAGE = "top -b -n2 -p 1 | fgrep \"Cpu(s)\" | tail -1 | awk -F'id,' -v prefix=\"$prefix\" '{ split($1, vs, \",\"); v=vs[length(vs)]; sub(\"%\", \"\", v); printf \"%s%.1f%%\n\", prefix, 100 - v }'";
-        
+        private readonly ILinuxCommandsHelper _linuxCommandsHelper;
+
         private readonly ILinuxCpuMetricsHelpers _linuxCpuMetricsHelpers;
 
-        public LinuxCpuMetrics(ILinuxCpuMetricsHelpers linuxCpuMetricsHelpers)
+        public LinuxCpuMetrics(ILinuxCommandsHelper linuxCommandsHelper, ILinuxCpuMetricsHelpers linuxCpuMetricsHelpers)
         {
+            _linuxCommandsHelper = linuxCommandsHelper;
+
             _linuxCpuMetricsHelpers = linuxCpuMetricsHelpers;
         }
 
-        public float GetCpuUsagePercentage()
+        public double GetCpuUsagePercentage()
         {
-            throw new NotImplementedException();
+            var metricsOutput = _linuxCommandsHelper.ExecuteBashCommand(LinuxCommands.GET_CPU_METRICS_FROM_TOP_COMMAND);
+
+            var cpuUsagePercentage = _linuxCpuMetricsHelpers.GetCpuUsageFromTopCommandResult(metricsOutput);
+
+            return cpuUsagePercentage ?? throw new NullReferenceException("Cpu usage cannot be retrieved");
         }
 
-        public float GetCurrentProcessCpuUsagePercentage()
+        public double GetCurrentProcessCpuUsagePercentage()
         {
             throw new NotImplementedException();
         }

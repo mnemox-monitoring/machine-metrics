@@ -2,6 +2,6 @@
 {
     public interface ILinuxCpuMetricsHelpers
     {
-        float GetCpuUsagePercentage(float total, float used);
+        double? GetCpuUsageFromTopCommandResult(string result);
     }
 }

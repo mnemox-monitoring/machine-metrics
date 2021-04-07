@@ -2,7 +2,7 @@
 {
     public interface ICpuMetrics
     {
-        float GetCpuUsagePercentage();
-        float GetCurrentProcessCpuUsagePercentage();
+        double GetCpuUsagePercentage();
+        double GetCurrentProcessCpuUsagePercentage();
     }
 }
