@@ -1,6 +1,6 @@
 # Machine Metrics Library helps to retrieve memory and CPU metrics on Windows and Linux Machines
 
-# Example
+#### Using example
 
 ```csharp
 var metricManager = new MetricManager(new MetricsManagerHelpers());
