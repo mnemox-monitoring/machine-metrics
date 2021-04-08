@@ -1,4 +1,4 @@
-# Machine Metrics Library helps to retrieve memory and CPU metrics on Windows and Linux Machines
+### Machine Metrics Library helps to retrieve memory and CPU metrics on Windows and Linux Machines
 
 #### Using example
 
