@@ -8,5 +8,6 @@ namespace Mnemox.Machine.Metrics
         OSPlatform DetectOsPlatform();
         ICpuMetrics GetCpuMetricsCollector(OSPlatform osPlatform);
         IMemoryMetrics GetMemoryMetricsCollector(OSPlatform osPlatform);
+        double GetMemoryUsedPercents(ulong totalPhysicalMemoryBytes, ulong totalUsedMemoryBytes);
     }
 }

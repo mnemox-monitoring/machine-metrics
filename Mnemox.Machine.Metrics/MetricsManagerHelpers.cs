@@ -25,7 +25,7 @@ namespace Mnemox.Machine.Metrics
         {
             if (osPlatform == OSPlatform.Windows)
             {
-                return new WindowsMemoryMetrics();
+                return new WindowsMemoryMetrics(new WindowsMemoryMetricsHelpers());
             }
             else if (osPlatform == OSPlatform.Linux)
             {
@@ -47,6 +47,11 @@ namespace Mnemox.Machine.Metrics
             }
 
             throw new PlatformNotSupportedException($"Not supported platform {osPlatform}");
+        }
+
+        public double GetMemoryUsedPercents(ulong totalPhysicalMemoryBytes, ulong totalUsedMemoryBytes)
+        {
+            return (totalUsedMemoryBytes * 100.0) / totalPhysicalMemoryBytes;
         }
     }
 }

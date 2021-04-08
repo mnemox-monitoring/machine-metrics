@@ -1,6 +1,4 @@
 ﻿using Mnemox.Machine.Metrics.Structures;
-using System;
-using System.Collections.Generic;
 
 namespace Mnemox.Machine.Metrics.Linux
 {
@@ -19,26 +17,31 @@ namespace Mnemox.Machine.Metrics.Linux
             _linuxCommandsHelper = linuxCommandsHelper;
         }
 
-        public ulong GetMemoryAvailableBytes()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<PhysicalMemory> GetPhysicalMemory()
-        {
-            throw new NotImplementedException();
-        }
-
-        public PhysicalMemory GetTotalPhysicalMemory()
+        public ulong GetAvailableBytes()
         {
             var freeCommandOutput = _linuxCommandsHelper.ExecuteBashCommand(LinuxCommands.GET_MEMORY_METRICS);
 
             var metrics = _linuxMemoryMetricsHelpers.GetParsedMetrics(freeCommandOutput);
 
-            return new PhysicalMemory
-            {
-                CapaciyBytes = metrics.TotalBytes
-            };
+            return metrics.UsedBytes;
+        }
+
+        public ulong GetTotalPhysicalMemoryBytes()
+        {
+            var freeCommandOutput = _linuxCommandsHelper.ExecuteBashCommand(LinuxCommands.GET_MEMORY_METRICS);
+
+            var metrics = _linuxMemoryMetricsHelpers.GetParsedMetrics(freeCommandOutput);
+
+            return metrics.TotalBytes;
+        }
+
+        public ulong GetUsedMemoryBytes()
+        {
+            var freeCommandOutput = _linuxCommandsHelper.ExecuteBashCommand(LinuxCommands.GET_MEMORY_METRICS);
+
+            var metrics = _linuxMemoryMetricsHelpers.GetParsedMetrics(freeCommandOutput);
+
+            return metrics.UsedBytes;
         }
     }
 }

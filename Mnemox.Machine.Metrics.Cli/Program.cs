@@ -11,12 +11,14 @@ namespace Mnemox.Machine.Metrics.Cli
             Console.WriteLine();
             Console.WriteLine("****** Mnemox Metrics ********************");
             Console.WriteLine();
-            Console.WriteLine($"Total memory bytes: {metrics.CapacityBytes}");
-            Console.WriteLine($"Total cpu usage:    {metrics.TotalCpuUsagePercentage}%");
+            Console.WriteLine($"Memory total(bytes):   {metrics.MemoryCapacityBytes}");
+            Console.WriteLine($"Memory used(bytes):    {metrics.MemoryUsedBytes}");
+            Console.WriteLine($"Memory used(%):        {metrics.MemoryUsedPercents}");
+            Console.WriteLine($"Total CPU usage(%):    {metrics.TotalCpuUsagePercentage}");
+            Console.WriteLine($"Process CPU usage(%):  {metrics.CurrentProcessCpuUsagePercentage}");
             Console.WriteLine();
             Console.WriteLine("******************************************");
             Console.WriteLine();
-
         }
     }
 }

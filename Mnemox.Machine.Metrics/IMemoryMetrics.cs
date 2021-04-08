@@ -1,14 +1,12 @@
 ﻿using Mnemox.Machine.Metrics.Structures;
-using System.Collections.Generic;
 
 namespace Mnemox.Machine.Metrics
 {
     public interface IMemoryMetrics
     {        
-        PhysicalMemory GetTotalPhysicalMemory();
+        ulong GetTotalPhysicalMemoryBytes();
 
-        List<PhysicalMemory> GetPhysicalMemory();
-
-        ulong GetMemoryAvailableBytes();
+        ulong GetAvailableBytes();
+        ulong GetUsedMemoryBytes();
     }
 }

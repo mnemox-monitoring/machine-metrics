@@ -18,17 +18,29 @@ namespace Mnemox.Machine.Metrics
 
             var memoryMetricsCollector = _metricsManagerHelpers.GetMemoryMetricsCollector(osPaltform);
 
-            var memoryMestrics = memoryMetricsCollector.GetTotalPhysicalMemory();
+            var totalPhysicalMemoryBytes = memoryMetricsCollector.GetTotalPhysicalMemoryBytes();
+
+            var totalUsedMemoryBytes = memoryMetricsCollector.GetUsedMemoryBytes();
 
             var cpuMetricsCollector = _metricsManagerHelpers.GetCpuMetricsCollector(osPaltform);
 
             var totalCpuUsagePercentage = cpuMetricsCollector.GetCpuUsagePercentage();
 
+            var currentProcessCpuUsagePercentage = cpuMetricsCollector.GetCurrentProcessCpuUsagePercentage();
+
+            var memoryUsedPercents = _metricsManagerHelpers.GetMemoryUsedPercents(totalPhysicalMemoryBytes, totalUsedMemoryBytes);
+
             return new OsMetrics
             {
                 TotalCpuUsagePercentage = Math.Round(totalCpuUsagePercentage, 2),
 
-                CapacityBytes = memoryMestrics.CapaciyBytes
+                CurrentProcessCpuUsagePercentage = Math.Round(currentProcessCpuUsagePercentage, 2),
+
+                MemoryCapacityBytes = totalPhysicalMemoryBytes,
+
+                MemoryUsedBytes = totalUsedMemoryBytes,
+
+                MemoryUsedPercents = Math.Round(memoryUsedPercents, 2)
             };
         }
     }
